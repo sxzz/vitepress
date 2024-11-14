@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 interface Props {
   text?: string
   type?: 'info' | 'tip' | 'warning' | 'danger'

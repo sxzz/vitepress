@@ -1,8 +1,8 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import docsearch from '@docsearch/js'
 import { useRoute, useRouter } from 'vitepress'
 import type { DefaultTheme } from 'vitepress/theme'
-import { nextTick, onMounted, watch } from 'vue'
+import { nextTick, onMounted, watch } from 'vue/vapor'
 import { useData } from '../composables/data'
 
 const props = defineProps<{

@@ -1,22 +1,23 @@
-<script lang="ts" setup>
+<script lang="ts" setup vapor>
 import '@docsearch/css'
 import { onKeyStroke } from '@vueuse/core'
 import {
-  defineAsyncComponent,
+  // defineAsyncComponent,
   onMounted,
   onUnmounted,
   ref
-} from 'vue'
+} from 'vue/vapor'
 import type { DefaultTheme } from '../../shared'
 import { useData } from '../composables/data'
 import VPNavBarSearchButton from './VPNavBarSearchButton.vue'
+import VPAlgoliaSearchBoxVue from './VPAlgoliaSearchBox.vue'
 
 const VPLocalSearchBox = __VP_LOCAL_SEARCH__
   ? defineAsyncComponent(() => import('./VPLocalSearchBox.vue'))
   : () => null
 
 const VPAlgoliaSearchBox = __ALGOLIA__
-  ? defineAsyncComponent(() => import('./VPAlgoliaSearchBox.vue'))
+  ? VPAlgoliaSearchBoxVue
   : () => null
 
 const { theme } = useData()

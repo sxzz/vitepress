@@ -10,7 +10,7 @@ import {
   watchPostEffect,
   type ComputedRef,
   type Ref
-} from 'vue'
+} from 'vue/vapor'
 import { isActive } from '../../shared'
 import {
   hasActiveLink as containsActiveLink,

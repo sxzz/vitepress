@@ -1,4 +1,4 @@
-import { type Ref, ref, watch, readonly, onUnmounted } from 'vue'
+import { type Ref, ref, watch, readonly, onUnmounted } from 'vue/vapor'
 import { inBrowser } from '../../shared'
 
 interface UseFlyoutOptions {

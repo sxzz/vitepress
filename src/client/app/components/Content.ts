@@ -1,4 +1,13 @@
-import { defineComponent, h, watch } from 'vue'
+import {
+  createComponent,
+  defineComponent,
+  template,
+  watch,
+  createBranch,
+  onMounted,
+  onUpdated,
+  onUnmounted
+} from 'vue/vapor'
 import { useData, useRoute } from 'vitepress'
 import { contentUpdatedCallbacks } from '../utils'
 
@@ -9,23 +18,28 @@ export const Content = defineComponent({
   props: {
     as: { type: [Object, String], default: 'div' }
   },
+  vapor: true,
   setup(props) {
     const route = useRoute()
     const { frontmatter, site } = useData()
     watch(frontmatter, runCbs, { deep: true, flush: 'post' })
-    return () =>
-      h(
-        props.as,
-        site.value.contentProps ?? { style: { position: 'relative' } },
-        [
-          route.component
-            ? h(route.component, {
-                onVnodeMounted: runCbs,
-                onVnodeUpdated: runCbs,
-                onVnodeUnmounted: runCbs
-              })
-            : '404 Page Not Found'
-        ]
-      )
+
+    onMounted(runCbs)
+    onUpdated(runCbs)
+    onUnmounted(runCbs)
+
+    return createComponent(
+      props.as,
+      () => site.value.contentProps ?? { style: { position: 'relative' } },
+      {
+        default: () => {
+          return createBranch(
+            () => route.component,
+            (value) => () =>
+              value ? createComponent(value) : template('404 Page Not Found')()
+          )
+        }
+      }
+    )
   }
 })

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import { withBase } from 'vitepress'
 import { useData } from './composables/data'
 import { useLangs } from './composables/langs'

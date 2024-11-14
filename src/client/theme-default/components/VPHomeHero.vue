@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import { useData } from '../composables/data'
 import VPHero from './VPHero.vue'
 

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" setup vapor>
 import type { DefaultTheme } from 'vitepress/theme'
 import VPSocialLink from './VPSocialLink.vue'
 
@@ -10,11 +10,11 @@ defineProps<{
 <template>
   <div class="VPSocialLinks">
     <VPSocialLink
-      v-for="{ link, icon, ariaLabel } in links"
-      :key="link"
-      :icon="icon"
-      :link="link"
-      :ariaLabel="ariaLabel"
+      v-for="link in links"
+      :key="link.link"
+      :icon="link.icon"
+      :link="link.link"
+      :ariaLabel="link.ariaLabel"
     />
   </div>
 </template>

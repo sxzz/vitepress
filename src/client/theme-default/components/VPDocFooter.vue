@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { computed } from 'vue'
+<script setup lang="ts" vapor>
+import { computed } from 'vue/vapor'
 import { useData } from '../composables/data'
 import { useEditLink } from '../composables/edit-link'
 import { usePrevNext } from '../composables/prev-next'

@@ -1,6 +1,6 @@
-<script lang="ts" setup>
+<script lang="ts" setup vapor>
 import type { DefaultTheme } from 'vitepress/theme'
-import { inject } from 'vue'
+import { inject } from 'vue/vapor'
 import VPLink from './VPLink.vue'
 
 defineProps<{

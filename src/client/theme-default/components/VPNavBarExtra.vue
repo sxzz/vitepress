@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-import { computed } from 'vue'
+<script lang="ts" setup vapor>
+import { computed } from 'vue/vapor'
 import VPFlyout from './VPFlyout.vue'
 import VPMenuLink from './VPMenuLink.vue'
 import VPSwitchAppearance from './VPSwitchAppearance.vue'

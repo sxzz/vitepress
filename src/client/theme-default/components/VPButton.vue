@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { computed } from 'vue'
+<script setup lang="ts" vapor>
+import { computed } from 'vue/vapor'
 import { normalizeLink } from '../support/utils'
 import { EXTERNAL_URL_RE } from '../../shared'
 

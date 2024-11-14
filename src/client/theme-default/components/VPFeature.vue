@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import type { DefaultTheme } from 'vitepress/theme'
 import VPImage from './VPImage.vue'
 import VPLink from './VPLink.vue'

@@ -1,13 +1,12 @@
 import RawTheme from '@theme/index'
 import {
-  createApp as createClientApp,
-  createSSRApp,
+  createComponent,
   defineComponent,
-  h,
   onMounted,
   watchEffect,
   type App
-} from 'vue'
+} from 'vue/vapor'
+import { createVaporApp } from 'vue/vapor'
 import { ClientOnly } from './components/ClientOnly'
 import { Content } from './components/Content'
 import { useCodeGroups } from './composables/codeGroups'
@@ -59,7 +58,7 @@ const VitePressApp = defineComponent({
     useCodeGroups()
 
     if (Theme.setup) Theme.setup()
-    return () => h(Theme.Layout!)
+    return createComponent(Theme.Layout!, null, null, true)
   }
 })
 
@@ -112,9 +111,7 @@ export async function createApp() {
 }
 
 function newApp(): App {
-  return import.meta.env.PROD
-    ? createSSRApp(VitePressApp)
-    : createClientApp(VitePressApp)
+  return createVaporApp(VitePressApp)
 }
 
 function newRouter(): Router {

@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import { useScrollLock } from '@vueuse/core'
 import { inBrowser } from 'vitepress'
-import { ref } from 'vue'
+import { ref } from 'vue/vapor'
 import VPNavScreenAppearance from './VPNavScreenAppearance.vue'
 import VPNavScreenMenu from './VPNavScreenMenu.vue'
 import VPNavScreenSocialLinks from './VPNavScreenSocialLinks.vue'
@@ -16,11 +16,12 @@ const isLocked = useScrollLock(inBrowser ? document.body : null)
 </script>
 
 <template>
-  <transition
+  <!-- TODO vapor -->
+  <!-- <transition
     name="fade"
     @enter="isLocked = true"
     @after-leave="isLocked = false"
-  >
+  > -->
     <div v-if="open" class="VPNavScreen" ref="screen" id="VPNavScreen">
       <div class="container">
         <slot name="nav-screen-content-before" />
@@ -31,7 +32,7 @@ const isLocked = useScrollLock(inBrowser ? document.body : null)
         <slot name="nav-screen-content-after" />
       </div>
     </div>
-  </transition>
+  <!-- </transition> -->
 </template>
 
 <style scoped>

@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-import { computed, ref } from 'vue'
+<script lang="ts" setup vapor>
+import { computed, ref } from 'vue/vapor'
 import VPNavScreenMenuGroupLink from './VPNavScreenMenuGroupLink.vue'
 import VPNavScreenMenuGroupSection from './VPNavScreenMenuGroupSection.vue'
 

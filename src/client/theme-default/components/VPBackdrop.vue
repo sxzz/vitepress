@@ -1,13 +1,14 @@
-<script lang="ts" setup>
+<script lang="ts" setup vapor>
 defineProps<{
   show: boolean
 }>()
 </script>
 
 <template>
-  <transition name="fade">
+  <!-- TODO vapor -->
+  <!-- <transition name="fade"> -->
     <div v-if="show" class="VPBackdrop" />
-  </transition>
+  <!-- </transition> -->
 </template>
 
 <style scoped>

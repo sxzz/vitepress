@@ -1,6 +1,6 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import type { DefaultTheme } from 'vitepress/theme'
-import { computed } from 'vue'
+import { computed } from 'vue/vapor'
 import { useSidebarControl } from '../composables/sidebar'
 import VPLink from './VPLink.vue'
 

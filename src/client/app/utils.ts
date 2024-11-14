@@ -6,12 +6,12 @@ import {
   type Awaitable
 } from '../shared'
 import {
-  h,
+  // h,
   onMounted,
   onUnmounted,
-  shallowRef,
-  type AsyncComponentLoader
-} from 'vue'
+  shallowRef
+  // type AsyncComponentLoader
+} from 'vue/vapor'
 
 export { inBrowser, escapeHtml as _escapeHtml } from '../shared'
 

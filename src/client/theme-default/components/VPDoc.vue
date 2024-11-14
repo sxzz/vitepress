@@ -1,6 +1,6 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import { useRoute } from 'vitepress'
-import { computed } from 'vue'
+import { computed } from 'vue/vapor'
 import { useData } from '../composables/data'
 import { useSidebar } from '../composables/sidebar'
 import VPDocAside from './VPDocAside.vue'

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import { useData } from '../composables/data'
 import VPDocAsideOutline from './VPDocAsideOutline.vue'
 import VPDocAsideCarbonAds from './VPDocAsideCarbonAds.vue'

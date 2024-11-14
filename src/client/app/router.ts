@@ -1,5 +1,5 @@
-import type { Component, InjectionKey } from 'vue'
-import { inject, markRaw, nextTick, reactive, readonly } from 'vue'
+import type { Component, InjectionKey } from 'vue/vapor'
+import { inject, markRaw, nextTick, reactive, readonly } from 'vue/vapor'
 import type { Awaitable, PageData, PageDataPayload } from '../shared'
 import { notFoundPageData, treatAsHtml } from '../shared'
 import { siteDataRef } from './data'

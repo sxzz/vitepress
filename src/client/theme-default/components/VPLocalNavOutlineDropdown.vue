@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import { onKeyStroke } from '@vueuse/core'
 import { onContentUpdated } from 'vitepress'
-import { nextTick, ref, watch } from 'vue'
+import { nextTick, ref, watch } from 'vue/vapor'
 import { useData } from '../composables/data'
 import { resolveTitle, type MenuItem } from '../composables/outline'
 import VPDocOutlineItem from './VPDocOutlineItem.vue'
@@ -75,7 +75,7 @@ function scrollToTop() {
     <button @click="scrollToTop" v-else>
       {{ theme.returnToTopLabel || 'Return to top' }}
     </button>
-    <Transition name="flyout">
+    <!-- <Transition name="flyout"> -->
       <div v-if="open" ref="items" class="items" @click="onItemClick">
         <div class="header">
           <a class="top-link" href="#" @click="scrollToTop">
@@ -86,7 +86,7 @@ function scrollToTop() {
           <VPDocOutlineItem :headers="headers" />
         </div>
       </div>
-    </Transition>
+    <!-- </Transition> -->
   </div>
 </template>
 

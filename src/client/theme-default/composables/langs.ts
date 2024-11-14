@@ -1,4 +1,4 @@
-import { computed } from 'vue'
+import { computed } from 'vue/vapor'
 import { ensureStartingSlash } from '../support/utils'
 import { useData } from './data'
 

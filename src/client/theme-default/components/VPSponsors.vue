@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import type { GridSize } from '../composables/sponsor-grid'
 import type { Sponsor } from './VPSponsorsGrid.vue'
-import { computed } from 'vue'
+import { computed } from 'vue/vapor'
 import VPSponsorsGrid from './VPSponsorsGrid.vue'
 
 export interface Sponsors {

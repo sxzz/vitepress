@@ -1,7 +1,13 @@
-<template>
+<script setup lang="ts" vapor>
+import { useSlots } from 'vue/vapor';
+
+const slots = useSlots()
+</script>
+
+<template vapor>
   <button class="VPSwitch" type="button" role="switch">
     <span class="check">
-      <span class="icon" v-if="$slots.default">
+      <span class="icon" v-if="slots.default">
         <slot />
       </span>
     </span>

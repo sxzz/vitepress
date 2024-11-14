@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import VPHomeHero from './VPHomeHero.vue'
 import VPHomeFeatures from './VPHomeFeatures.vue'
 import VPHomeContent from './VPHomeContent.vue'

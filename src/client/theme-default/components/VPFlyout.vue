@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-import { ref } from 'vue'
+<script lang="ts" setup vapor>
+import { ref } from 'vue/vapor'
 import { useFlyout } from '../composables/flyout'
 import VPMenu from './VPMenu.vue'
 

@@ -1,6 +1,6 @@
 import { onContentUpdated } from 'vitepress'
 import type { DefaultTheme } from 'vitepress/theme'
-import { computed, shallowRef } from 'vue'
+import { computed, shallowRef } from 'vue/vapor'
 import { getHeaders, type MenuItem } from '../composables/outline'
 import { useData } from './data'
 

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" setup vapor>
 import { useData } from '../composables/data'
 import VPNavScreenMenuLink from './VPNavScreenMenuLink.vue'
 import VPNavScreenMenuGroup from './VPNavScreenMenuGroup.vue'

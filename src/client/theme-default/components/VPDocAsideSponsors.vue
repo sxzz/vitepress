@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import type { Sponsors } from './VPSponsors.vue'
 import type { Sponsor } from './VPSponsorsGrid.vue'
 import VPSponsors from './VPSponsors.vue'

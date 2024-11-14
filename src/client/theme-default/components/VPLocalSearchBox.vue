@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" setup vapor>
 import localSearchIndex from '@localSearchIndex'
 import {
   computedAsync,
@@ -25,7 +25,7 @@ import {
   watch,
   watchEffect,
   type Ref
-} from 'vue'
+} from 'vue/vapor'
 import type { ModalTranslations } from '../../../../types/local-search'
 import { pathToFile } from '../../app/utils'
 import { escapeRegExp } from '../../shared'

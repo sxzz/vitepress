@@ -1,11 +1,14 @@
-<script setup lang="ts">
+<script setup lang="ts" vapor>
 import type { DefaultTheme } from 'vitepress/theme'
 import { withBase } from 'vitepress'
+import { useAttrs } from 'vue/vapor';
 
 defineProps<{
   image: DefaultTheme.ThemeableImage
   alt?: string
 }>()
+
+const attrs = useAttrs()
 
 defineOptions({ inheritAttrs: false })
 </script>
@@ -15,7 +18,7 @@ defineOptions({ inheritAttrs: false })
     <img
       v-if="typeof image === 'string' || 'src' in image"
       class="VPImage"
-      v-bind="typeof image === 'string' ? $attrs : { ...image, ...$attrs }"
+      v-bind="typeof image === 'string' ? attrs : { ...image, ...attrs }"
       :src="withBase(typeof image === 'string' ? image : image.src)"
       :alt="alt ?? (typeof image === 'string' ? '' : image.alt || '')"
     />
@@ -24,13 +27,13 @@ defineOptions({ inheritAttrs: false })
         class="dark"
         :image="image.dark"
         :alt="image.alt"
-        v-bind="$attrs"
+        v-bind="attrs"
       />
       <VPImage
         class="light"
         :image="image.light"
         :alt="image.alt"
-        v-bind="$attrs"
+        v-bind="attrs"
       />
     </template>
   </template>

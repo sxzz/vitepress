@@ -1,7 +1,7 @@
-<script lang="ts" setup>
+<script lang="ts" setup vapor>
 import type { DefaultTheme } from 'vitepress/theme'
-import { computed, nextTick, onMounted, ref, useSSRContext } from 'vue'
-import type { SSGContext } from '../../shared'
+import { computed, nextTick, onMounted, ref } from 'vue/vapor'
+// import type { SSGContext } from '../../shared'
 
 const props = defineProps<{
   icon: DefaultTheme.SocialLinkIcon
@@ -32,10 +32,10 @@ const svg = computed(() => {
   return `<span class="vpi-social-${props.icon}"></span>`
 })
 
-if (import.meta.env.SSR) {
-  typeof props.icon === 'string' &&
-    useSSRContext<SSGContext>()?.vpSocialIcons.add(props.icon)
-}
+// if (import.meta.env.SSR) {
+//   typeof props.icon === 'string' &&
+//     useSSRContext<SSGContext>()?.vpSocialIcons.add(props.icon)
+// }
 </script>
 
 <template>
