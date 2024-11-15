@@ -1,4 +1,4 @@
-import { watchEffect, type Ref } from 'vue/vapor'
+import { watchEffect, type Ref } from 'vue'
 import {
   type HeadConfig,
   type SiteData,

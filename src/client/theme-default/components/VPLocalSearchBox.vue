@@ -25,7 +25,7 @@ import {
   watch,
   watchEffect,
   type Ref
-} from 'vue/vapor'
+} from 'vue'
 import type { ModalTranslations } from '../../../../types/local-search'
 import { pathToFile } from '../../app/utils'
 import { escapeRegExp } from '../../shared'

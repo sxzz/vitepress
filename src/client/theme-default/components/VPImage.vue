@@ -1,7 +1,7 @@
 <script setup lang="ts" vapor>
 import type { DefaultTheme } from 'vitepress/theme'
 import { withBase } from 'vitepress'
-import { useAttrs } from 'vue/vapor';
+import { useAttrs } from 'vue';
 
 defineProps<{
   image: DefaultTheme.ThemeableImage

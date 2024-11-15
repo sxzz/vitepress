@@ -1,4 +1,4 @@
-import { ref, watch } from 'vue/vapor'
+import { ref, watch } from 'vue'
 import { useRoute } from 'vitepress'
 
 export function useNav() {

@@ -1,4 +1,4 @@
-import type { App, Ref, Component } from 'vue/vapor'
+import type { App, Ref, Component } from 'vue'
 import type { Router } from './router'
 import type { Awaitable, SiteData } from '../shared'
 

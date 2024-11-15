@@ -1,6 +1,6 @@
 <script lang="ts" setup vapor>
 import type { DefaultTheme } from 'vitepress/theme'
-import { computed } from 'vue/vapor'
+import { computed } from 'vue'
 import { useData } from '../composables/data'
 import { isActive } from '../../shared'
 import VPFlyout from './VPFlyout.vue'

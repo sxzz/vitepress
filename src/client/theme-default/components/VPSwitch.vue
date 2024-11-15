@@ -1,5 +1,5 @@
 <script setup lang="ts" vapor>
-import { useSlots } from 'vue/vapor';
+import { useSlots } from 'vue';
 
 const slots = useSlots()
 </script>

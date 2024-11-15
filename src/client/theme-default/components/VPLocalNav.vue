@@ -1,7 +1,7 @@
 <script lang="ts" setup vapor>
 import { useWindowScroll } from '@vueuse/core'
 import { onContentUpdated } from 'vitepress'
-import { computed, onMounted, ref } from 'vue/vapor'
+import { computed, onMounted, ref } from 'vue'
 import { useData } from '../composables/data'
 import { useLocalNav } from '../composables/local-nav'
 import { getHeaders } from '../composables/outline'

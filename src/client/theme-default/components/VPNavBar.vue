@@ -1,6 +1,6 @@
 <script lang="ts" setup vapor>
 import { useWindowScroll } from '@vueuse/core'
-import { ref, watchPostEffect } from 'vue/vapor'
+import { ref, watchPostEffect } from 'vue'
 import { useData } from '../composables/data'
 import { useSidebar } from '../composables/sidebar'
 import VPNavBarAppearance from './VPNavBarAppearance.vue'

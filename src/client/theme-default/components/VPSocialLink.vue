@@ -1,6 +1,6 @@
 <script lang="ts" setup vapor>
 import type { DefaultTheme } from 'vitepress/theme'
-import { computed, nextTick, onMounted, ref } from 'vue/vapor'
+import { computed, nextTick, onMounted, ref } from 'vue'
 // import type { SSGContext } from '../../shared'
 
 const props = defineProps<{

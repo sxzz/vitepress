@@ -1,5 +1,5 @@
 import { useMediaQuery } from '@vueuse/core'
-import { computed } from 'vue/vapor'
+import { computed } from 'vue'
 import { useSidebar } from './sidebar'
 
 export function useAside() {

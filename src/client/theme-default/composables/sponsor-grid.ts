@@ -1,4 +1,4 @@
-import { type Ref, onMounted, onUnmounted } from 'vue/vapor'
+import { type Ref, onMounted, onUnmounted } from 'vue'
 import { throttleAndDebounce } from '../support/utils'
 
 export interface GridSetting {

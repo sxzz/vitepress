@@ -1,6 +1,6 @@
 <script setup lang="ts" vapor>
 import type { DefaultTheme } from 'vitepress/theme'
-import { onBeforeUnmount, onMounted, ref } from 'vue/vapor'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import VPSidebarItem from './VPSidebarItem.vue'
 
 defineProps<{

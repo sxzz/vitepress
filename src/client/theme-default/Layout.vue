@@ -1,6 +1,6 @@
 <script setup lang="ts" vapor>
 import { useRoute } from 'vitepress'
-import { computed, provide, useSlots, watch } from 'vue/vapor'
+import { computed, provide, useSlots, watch } from 'vue'
 import VPBackdrop from './components/VPBackdrop.vue'
 import VPContent from './components/VPContent.vue'
 import VPFooter from './components/VPFooter.vue'

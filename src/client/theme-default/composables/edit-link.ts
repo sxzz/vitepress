@@ -1,4 +1,4 @@
-import { computed } from 'vue/vapor'
+import { computed } from 'vue'
 import { useData } from './data'
 
 export function useEditLink() {

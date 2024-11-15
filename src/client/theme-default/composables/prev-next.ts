@@ -1,4 +1,4 @@
-import { computed } from 'vue/vapor'
+import { computed } from 'vue'
 import { useData } from './data'
 import { isActive } from '../../shared'
 import { getSidebar, getFlatSideBarLinks } from '../support/sidebar'

@@ -1,5 +1,5 @@
 <script setup lang="ts" vapor>
-import { ref, computed, watchEffect, onMounted } from 'vue/vapor'
+import { ref, computed, watchEffect, onMounted } from 'vue'
 import { useData } from '../composables/data'
 
 const { theme, page, lang } = useData()

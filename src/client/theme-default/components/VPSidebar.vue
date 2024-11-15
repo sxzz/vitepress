@@ -1,7 +1,7 @@
 <script lang="ts" setup vapor>
 import { useScrollLock } from '@vueuse/core'
 import { inBrowser } from 'vitepress'
-import { ref, watch } from 'vue/vapor'
+import { ref, watch } from 'vue'
 import { useSidebar } from '../composables/sidebar'
 import VPSidebarGroup from './VPSidebarGroup.vue'
 

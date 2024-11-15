@@ -1,7 +1,7 @@
 <script setup lang="ts" vapor>
 import { useScrollLock } from '@vueuse/core'
 import { inBrowser } from 'vitepress'
-import { ref } from 'vue/vapor'
+import { ref } from 'vue'
 import VPNavScreenAppearance from './VPNavScreenAppearance.vue'
 import VPNavScreenMenu from './VPNavScreenMenu.vue'
 import VPNavScreenSocialLinks from './VPNavScreenSocialLinks.vue'

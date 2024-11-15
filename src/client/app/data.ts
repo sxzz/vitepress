@@ -9,7 +9,7 @@ import {
   watch,
   type InjectionKey,
   type Ref
-} from 'vue/vapor'
+} from 'vue'
 import {
   APPEARANCE_KEY,
   createTitle,

@@ -1,6 +1,6 @@
 <script setup lang="ts" vapor>
 import { inBrowser } from 'vitepress'
-import { computed, provide, watchEffect } from 'vue/vapor'
+import { computed, provide, watchEffect } from 'vue'
 import { useData } from '../composables/data'
 import { useNav } from '../composables/nav'
 import VPNavBar from './VPNavBar.vue'

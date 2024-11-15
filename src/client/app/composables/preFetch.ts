@@ -2,7 +2,7 @@
 // https://github.com/GoogleChromeLabs/quicklink
 
 import { useRoute } from '../router'
-import { onMounted, onUnmounted, watch } from 'vue/vapor'
+import { onMounted, onUnmounted, watch } from 'vue'
 import { inBrowser, pathToFile } from '../utils'
 
 const hasFetched = new Set<string>()

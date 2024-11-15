@@ -7,7 +7,7 @@ import {
   onMounted,
   onUpdated,
   onUnmounted
-} from 'vue/vapor'
+} from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { contentUpdatedCallbacks } from '../utils'
 

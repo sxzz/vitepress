@@ -5,8 +5,8 @@ import {
   onMounted,
   watchEffect,
   type App
-} from 'vue/vapor'
-import { createVaporApp } from 'vue/vapor'
+} from 'vue'
+import { createVaporApp } from 'vue'
 import { ClientOnly } from './components/ClientOnly'
 import { Content } from './components/Content'
 import { useCodeGroups } from './composables/codeGroups'

@@ -6,7 +6,7 @@ import {
   onMounted,
   onUnmounted,
   ref
-} from 'vue/vapor'
+} from 'vue'
 import type { DefaultTheme } from '../../shared'
 import { useData } from '../composables/data'
 import VPNavBarSearchButton from './VPNavBarSearchButton.vue'

@@ -1,7 +1,7 @@
 <script setup lang="ts" vapor>
 import { onKeyStroke } from '@vueuse/core'
 import { onContentUpdated } from 'vitepress'
-import { nextTick, ref, watch } from 'vue/vapor'
+import { nextTick, ref, watch } from 'vue'
 import { useData } from '../composables/data'
 import { resolveTitle, type MenuItem } from '../composables/outline'
 import VPDocOutlineItem from './VPDocOutlineItem.vue'

@@ -11,7 +11,7 @@ import {
   onUnmounted,
   shallowRef
   // type AsyncComponentLoader
-} from 'vue/vapor'
+} from 'vue'
 
 export { inBrowser, escapeHtml as _escapeHtml } from '../shared'
 

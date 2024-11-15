@@ -8,7 +8,8 @@
     "types": ["vite/client", "@types/node"],
     "paths": {
       "vitepress": ["index.ts"],
-      "vitepress/theme": ["../../theme.d.ts"]
+      "vitepress/theme": ["../../theme.d.ts"],
+      "vue": ["../../node_modules/vue/vapor/index.d.ts"]
     }
   },
   "include": ["."]

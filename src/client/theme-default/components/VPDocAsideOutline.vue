@@ -1,6 +1,6 @@
 <script setup lang="ts" vapor>
 import { onContentUpdated } from 'vitepress'
-import { ref, shallowRef } from 'vue/vapor'
+import { ref, shallowRef } from 'vue'
 import { useData } from '../composables/data'
 import {
   getHeaders,

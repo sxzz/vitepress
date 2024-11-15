@@ -1,6 +1,6 @@
 <script setup lang="ts" vapor>
 import type { DefaultTheme } from 'vitepress/theme'
-import { ref, watch, onMounted } from 'vue/vapor'
+import { ref, watch, onMounted } from 'vue'
 import { useAside } from '../composables/aside'
 import { useData } from '../composables/data'
 

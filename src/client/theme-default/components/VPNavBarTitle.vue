@@ -1,5 +1,5 @@
 <script setup lang="ts" vapor>
-import { computed } from 'vue/vapor'
+import { computed } from 'vue'
 import { useData } from '../composables/data'
 import { useLangs } from '../composables/langs'
 import { useSidebar } from '../composables/sidebar'

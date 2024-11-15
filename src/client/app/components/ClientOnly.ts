@@ -1,10 +1,4 @@
-import {
-  defineComponent,
-  ref,
-  onMounted,
-  createIf,
-  createSlot
-} from 'vue/vapor'
+import { defineComponent, ref, onMounted, createIf, createSlot } from 'vue'
 
 export const ClientOnly = defineComponent({
   setup(_) {
