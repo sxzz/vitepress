@@ -25,8 +25,8 @@ const { theme } = useData()
 // to avoid loading the docsearch js upfront (which is more than 1/3 of the
 // payload), we delay initializing it until the user has actually clicked or
 // hit the hotkey to invoke it.
-const loaded = ref(false)
-const actuallyLoaded = ref(false)
+const loaded = ref(true)
+const actuallyLoaded = ref(true)
 
 const preconnect = () => {
   const id = 'VPAlgoliaPreconnect'
@@ -148,7 +148,7 @@ const provider = __ALGOLIA__ ? 'algolia' : __VP_LOCAL_SEARCH__ ? 'local' : ''
         v-if="loaded"
         :algolia="theme.search?.options ?? theme.algolia"
         @vue:beforeMount="actuallyLoaded = true"
-      />
+      /> <!-- TODO vapor -->
 
       <div v-if="!actuallyLoaded" id="docsearch">
         <VPNavBarSearchButton @click="load" />
