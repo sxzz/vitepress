@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import type { DefaultTheme } from 'vitepress/theme'
 import { computed, nextTick, onMounted, ref } from 'vue'
 // import type { SSGContext } from '../../shared'

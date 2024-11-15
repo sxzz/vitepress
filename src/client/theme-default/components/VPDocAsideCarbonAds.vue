@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 // import { defineAsyncComponent } from 'vue'
 import type { DefaultTheme } from 'vitepress/theme'
 import VPCarbonAdsVue from './VPCarbonAds.vue'

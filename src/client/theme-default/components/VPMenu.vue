@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import VPMenuLink from './VPMenuLink.vue'
 import VPMenuGroup from './VPMenuGroup.vue'
 

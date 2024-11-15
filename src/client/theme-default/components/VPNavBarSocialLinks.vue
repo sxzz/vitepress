@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import { useData } from '../composables/data'
 import VPSocialLinks from './VPSocialLinks.vue'
 

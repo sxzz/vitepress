@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import { useWindowScroll } from '@vueuse/core'
 import { onContentUpdated } from 'vitepress'
 import { computed, onMounted, ref } from 'vue'

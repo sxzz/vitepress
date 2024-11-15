@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import type { DefaultTheme } from 'vitepress/theme'
 import { useData } from '../composables/data'
 import { isActive } from '../../shared'

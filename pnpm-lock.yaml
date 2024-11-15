@@ -38,8 +38,8 @@ importers:
         specifier: ^14.1.2
         version: 14.1.2
       '@vitejs/plugin-vue':
-        specifier: https://pkg.pr.new/@vitejs/plugin-vue@481bcd4
-        version: https://pkg.pr.new/@vitejs/plugin-vue@481bcd4(vite@5.4.11(@types/node@22.9.0))(vue@https://pkg.pr.new/vuejs/vue-vapor/vue@0c7817c(typescript@5.6.3))
+        specifier: https://pkg.pr.new/@vitejs/plugin-vue@e2276e6
+        version: https://pkg.pr.new/@vitejs/plugin-vue@e2276e6(vite@5.4.11(@types/node@22.9.0))(vue@https://pkg.pr.new/vuejs/vue-vapor/vue@0c7817c(typescript@5.6.3))
       '@vue/devtools-api':
         specifier: ^7.6.3
         version: 7.6.4
@@ -1125,9 +1125,9 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  '@vitejs/plugin-vue@https://pkg.pr.new/@vitejs/plugin-vue@481bcd4':
-    resolution: {tarball: https://pkg.pr.new/@vitejs/plugin-vue@481bcd4}
-    version: 5.1.5
+  '@vitejs/plugin-vue@https://pkg.pr.new/@vitejs/plugin-vue@e2276e6':
+    resolution: {tarball: https://pkg.pr.new/@vitejs/plugin-vue@e2276e6}
+    version: 5.2.0
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
@@ -3707,7 +3707,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-vue@https://pkg.pr.new/@vitejs/plugin-vue@481bcd4(vite@5.4.11(@types/node@22.9.0))(vue@https://pkg.pr.new/vuejs/vue-vapor/vue@0c7817c(typescript@5.6.3))':
+  '@vitejs/plugin-vue@https://pkg.pr.new/@vitejs/plugin-vue@e2276e6(vite@5.4.11(@types/node@22.9.0))(vue@https://pkg.pr.new/vuejs/vue-vapor/vue@0c7817c(typescript@5.6.3))':
     dependencies:
       vite: 5.4.11(@types/node@22.9.0)
       vue: https://pkg.pr.new/vuejs/vue-vapor/vue@0c7817c(typescript@5.6.3)

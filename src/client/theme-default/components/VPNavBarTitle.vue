@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from '../composables/data'
 import { useLangs } from '../composables/langs'

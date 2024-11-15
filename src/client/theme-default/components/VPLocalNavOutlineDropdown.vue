@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import { onKeyStroke } from '@vueuse/core'
 import { onContentUpdated } from 'vitepress'
 import { nextTick, ref, watch } from 'vue'

@@ -280,7 +280,7 @@ function injectPageDataCode(tags: string[], data: PageData) {
     )
   } else {
     tags.unshift(
-      `<script vapor ${
+      `<script ${
         isUsingTS ? 'lang="ts"' : ''
       }>${code}\nexport default {name:${JSON.stringify(
         data.relativePath

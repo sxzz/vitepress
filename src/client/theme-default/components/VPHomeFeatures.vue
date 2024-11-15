@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import { useData } from '../composables/data'
 import VPFeatures from './VPFeatures.vue'
 

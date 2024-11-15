@@ -16,5 +16,10 @@ export default defineConfig({
     ru: { label: 'Русский', ...ru },
     es: { label: 'Español', ...es },
     ko: { label: '한국어', ...ko }
+  },
+  vue: {
+    features: {
+      forceVapor: true
+    }
   }
 })

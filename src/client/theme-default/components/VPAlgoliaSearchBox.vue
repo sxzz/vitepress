@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import docsearch from '@docsearch/js'
 import { useRoute, useRouter } from 'vitepress'
 import type { DefaultTheme } from 'vitepress/theme'

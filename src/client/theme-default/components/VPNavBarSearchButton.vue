@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import type { ButtonTranslations } from '../../../../types/local-search'
 import { createSearchTranslate } from '../support/translation'
 

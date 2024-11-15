@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import { ref } from 'vue'
 import { useLangs } from '../composables/langs'
 import VPLink from './VPLink.vue'

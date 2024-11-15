@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import localSearchIndex from '@localSearchIndex'
 import {
   computedAsync,

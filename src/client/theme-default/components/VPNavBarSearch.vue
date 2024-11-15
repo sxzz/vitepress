@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import '@docsearch/css'
 import { onKeyStroke } from '@vueuse/core'
 import {

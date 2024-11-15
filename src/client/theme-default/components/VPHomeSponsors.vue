@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import VPButton from './VPButton.vue'
 import VPSponsors from './VPSponsors.vue'
 

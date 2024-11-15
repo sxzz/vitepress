@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import { ref, watch } from 'vue'
 import { useRoute } from 'vitepress'
 

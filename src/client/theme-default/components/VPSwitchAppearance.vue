@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import { inject, ref, watchPostEffect } from 'vue'
 import { useData } from '../composables/data'
 import VPSwitch from './VPSwitch.vue'

@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import type { DefaultTheme } from 'vitepress/theme'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import VPSidebarItem from './VPSidebarItem.vue'

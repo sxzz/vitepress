@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import type { MenuItem } from '../composables/outline'
 
 defineProps<{

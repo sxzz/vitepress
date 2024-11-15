@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import NotFound from '../NotFound.vue'
 import { useData } from '../composables/data'
 import { useSidebar } from '../composables/sidebar'

@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import { onContentUpdated } from 'vitepress'
 import { ref, shallowRef } from 'vue'
 import { useData } from '../composables/data'

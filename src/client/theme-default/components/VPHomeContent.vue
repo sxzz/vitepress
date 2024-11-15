@@ -1,4 +1,4 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 import { useWindowSize } from '@vueuse/core'
 
 const { width: vw } = useWindowSize({
