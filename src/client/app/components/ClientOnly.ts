@@ -1,7 +1,8 @@
 import { defineComponent, ref, onMounted, createIf, createSlot } from 'vue'
 
 export const ClientOnly = defineComponent({
-  setup(_) {
+  vapor: true,
+  setup() {
     const show = ref(false)
 
     onMounted(() => {
