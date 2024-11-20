@@ -15,7 +15,6 @@ import MiniSearch, { type SearchResult } from 'minisearch'
 import { dataSymbol, inBrowser, useRouter } from 'vitepress'
 import {
   computed,
-  createApp,
   markRaw,
   nextTick,
   onBeforeUnmount,
@@ -26,6 +25,7 @@ import {
   watchEffect,
   type Ref
 } from 'vue'
+import { createApp } from '@vue/runtime-dom'
 import type { ModalTranslations } from '../../../../types/local-search'
 import { pathToFile } from '../../app/utils'
 import { escapeRegExp } from '../../shared'

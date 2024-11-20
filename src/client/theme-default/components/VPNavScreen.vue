@@ -12,6 +12,8 @@ defineProps<{
 }>()
 
 const screen = ref<HTMLElement | null>(null)
+// TODO vapor
+//@ts-ignore
 const isLocked = useScrollLock(inBrowser ? document.body : null)
 </script>
 
