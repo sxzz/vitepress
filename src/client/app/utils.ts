@@ -12,6 +12,7 @@ import {
   shallowRef
   // type AsyncComponentLoader
 } from 'vue'
+import { h, type AsyncComponentLoader } from '@vue/runtime-dom'
 
 export { inBrowser, escapeHtml as _escapeHtml } from '../shared'
 
