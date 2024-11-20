@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const sponsors = computed(() => {
-  const isSponsors = props.data.some((s) => {
+  const isSponsors = props.data.some((s: Sponsors[]) => {
     return 'items' in s
   })
 
